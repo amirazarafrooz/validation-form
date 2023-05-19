@@ -18,6 +18,8 @@ function validationUsername(){
 
     if(name.length < 15 && name.match(nameFormat)){
         namevalid = true;
+        document.getElementById('username').setAttribute('style','border: 2px solid lightgray');
+        document.getElementById('errorusername').innerText = ''; 
     } else {
         document.getElementById('username').setAttribute('style','border: 2px solid red');
         document.getElementById('errorusername').innerText = 'username is not valid'; 
@@ -33,6 +35,8 @@ function validationPassword(){
 
     if(password.match(passwordFormat)){
         passwordvalid = true
+        document.getElementById('password').setAttribute('style','border: 2px solid lightgray');
+        document.getElementById('errorpassword').innerText = '';    
     } else {
         document.getElementById('password').setAttribute('style','border: 2px solid red');
         document.getElementById('errorpassword').innerText = 'password is not valid';    
@@ -47,6 +51,8 @@ function validationemail(){
 
     if(email.match(mailFormat)){
         emailvalid = true
+        document.getElementById('e-mail').setAttribute('style','border: 2px solid lightgray');
+        document.getElementById('erroremail').innerText = '';
     } else {
         document.getElementById('e-mail').setAttribute('style','border: 2px solid red');
         document.getElementById('erroremail').innerText = 'e-mail is not valid';
