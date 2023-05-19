@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tamrin 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="images/back2.jpg">
+        </div>
+        <div class="form-container">
+            <div class="title">
+                <p>login now!!!</p>
+            </div>
+                <form class="form-child">
+                    <div class="input-container">
+                    <label class="label" for="username">Username</label> 
+                    <input onchange="validationUsername()" class="input" id="username">
+
+
+                    <!-- error -->
+                    <label id="errorusername" class="error" for="username"></label> 
+
+
+
+                </div>
+                    <div class="input-container">
+                    <label class="label" for="password">Password</label> 
+                    <input onchange="validationPassword()" class="input" id="password" type="password">
+
+                    <!-- error -->
+                    <label id="errorpassword"   class="error" for="username"></label> 
+
+
+                </div>
+                <div class="input-container">
+
+                    <label class="label" for="e-mail">E-mail</label> 
+                    <input onchange="validationemail()" class="input" id="e-mail" type="text">
+
+                    <!-- error -->
+                    <label id="erroremail" class="error" for="username"></label> 
+
+
+                </div>
+                </form>
+            <div class="button"><button>
+                <button class="btn" id="btn">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
